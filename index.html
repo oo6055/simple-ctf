@@ -46,15 +46,17 @@ button {
 </head>    
 <body>
 	<!-- username  -->
-    <center> <h1> Student Login Form </h1> </center>   
+    <center> <h1> saudi login website </h1> </center>   
     <form>  
         <div class="container">   
             <label>Username : </label>   
             <input id="username_text" type="text" placeholder="Enter Username" name="username" required>  
             <label>Password : </label>   
             <input id="password_text" type="password" placeholder="Enter Password" name="password" required>  
-            <button onclick="myFunction()" type="button">Login</button>   
-			<span id="isloged">not logged in</span>
+            <button onclick="myFunction()" type="button">Login</button>  
+			<img id="picture" src="https://image.cnbcfm.com/api/v1/image/107094235-16588636502022-07-26t192210z_437356426_rc2tjv90z0k6_rtrmadp_0_greece-saudi.jpeg?v=1673629201" width="1000" height="600">
+
+			<span style="font-size:18px" id="isloged">not logged in</span>
 
 			<script>
 			var value="not logged password";//global variable  
@@ -62,6 +64,8 @@ button {
 		if (document.getElementById("username_text").value === "messi" && document.getElementById("password_text").value === "ronaldo")
 		{
 			value = "good job your next challenge https://github.com/oo6055/simple-ctf/blob/main/image.jpg";
+			document.getElementById("picture").src = "https://cdn-icons-png.flaticon.com/512/5277/5277377.png";
+
 		}
 		document.getElementById("isloged").innerHTML = value;
 		
